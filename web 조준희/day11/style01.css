@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0;}
+
+ul{list-style: none;}
+
+#wrap {width: 1200px; height: 1240px; background-color: rgba(0,0,0,.1); margin: auto;}
+header{ width: 1200px; height: 100px; background-color: rgba(255,0,0,rgba(0,0,0,.1));}
+nav{width: 1200px; height: 40px; background-color: rgba(0,255,0,.1);}
+nav ul li {width: 200px;height: 40px;background-color: rgba(0,0,0,.1); float: left;}
+section {width: 1200px;height: 600px; background-color: rgba(0,0,255,.1);}
+article {width: 600px; height: 200px; background-color: rgba(255,255,0,.1); float: left;}
+footer {height: 1200px; height: 100px; background-color: rgba(0,255,255,.1); clear: both;}
+
+/* 태블릿버전 768 ~ 1199px */
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    #wrap {width: 768px; height: 1040px;}
+    header {width: 768px; height: 60px;}
+    nav {width: 768px; height: 80px;}
+    nav ul li {width: 256px;}
+    section {width: 768px; height: 400px;}
+    article {width: 384px;}
+    footer {width: 768px;}
+}
+
+/* 모바일 버저너 0~ 767px */
+@media screen and (max-width: 767px) {
+    #wrap {width: 360px; height: 1380px;}
+    header {width: 360px; height: 60px;}
+    nav {width: 360px; height: 120px;}
+    nav ul li {width: 180px;}
+    section {width: 360px; height: 300px;}
+    article {width: 360px;}
+    footer {width: 360px;}
+}

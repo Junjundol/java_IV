@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+ul {list-style: none;}
+
+/* 데스크탑 퍼스트 */
+#wrap {width: 960px; height: 1460px; background-color: rgba(0,0,0,.1); margin: auto;}
+header {width: 960px; height: 150px; background-color: rgba(255,0,0,.1); /*position: relative;*/ margin-bottom: 10px;}
+header h1,
+header p {height: 60px; padding-left: 10px;}
+nav {width: 960px; height: 30px; background-color: rgba(0,255,0,.1); /*position: absolute; bottom: 0;*/}
+nav ul li {width: 192px; height: 30px; background-color: rgba(0,0,0,.1); float: left;}
+section {width: 960px; height: 600px; background-color: rgba(0,0,255,.1);}
+article {width: 220px; height: 280px; background-color: rgba(255,255,0,.1); float: left; margin: 10px;}
+/* float이 적용된 요소에는 상하의 마진이 안 겹쳐진다. (상10 + 하10 = 20) */
+figure {width: 220px; height: 150px; background-color: rgba(0,0,0,.1);}
+footer {width: 960px; height: 100px; background-color: rgba(255,0,255,.1); clear: both;}
+
+/* 태블릿 600~959 */
+@media screen and (min-width: 600px) and (max-width: 959px){
+    #wrap {width: 600px; height: 1857px;}
+    header {width: 600px;}
+    nav {width: 600px;}
+    nav ul li {width: 120px;}
+    section {width: 600px; height: 400px;}
+    article {width: 280px;}
+    figure {width: 280px;}
+    footer {width: 600px;}
+}
+
+/* 모바일 0~599 */
+@media screen and (max-width:599px) {
+    #wrap {width: 360px; height: 2910px;}
+    header {width: 360px; height: 270px;}
+    nav {width: 360px; height: 150px;}
+    nav ul li {width: 360px;}
+    section {width: 360px; height: 200px;}
+    article {width: 340px; float: none;}
+    figure {width: 340px;}
+}
