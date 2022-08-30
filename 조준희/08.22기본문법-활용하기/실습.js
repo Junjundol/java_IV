@@ -1,8 +1,9 @@
+const k = 5;
 
-for (let i = 0; i < 7; i++){
-    let str = "";
-    for(let j = 1; j<=i+1; j++){
-        str += j;
-    }   
-    console.log(str);
+if (k>1 && k < 10 ) {
+    for (let i=1; i <10; i++){
+        console.log("%d x %d = %d", k, i, k*i);
+    }
+} else {
+    console.log("2~9사이의 수식만 출력합니다.");
 }
