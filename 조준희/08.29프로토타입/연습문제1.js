@@ -8,7 +8,7 @@
 //     this._kor = kor;
 //     this._eng = eng;
 //     this._math = math;
-// }
+// }ㅋ
 
 // Student.prototype = {
 //     sum : function(){
@@ -69,3 +69,10 @@ const 민혁 = new student(80, 86, 84);
 console.log("철수의 총점은 %d점이고 평균은 %d점입니다.", 철수.sum(), 철수.avg());
 console.log("영희의 총점은 %d점이고 평균은 %d점입니다.", 영희.sum(), 영희.avg());
 console.log("민혁의 총점은 %d점이고 평균은 %d점입니다.", 민혁.sum(), 민혁.avg());
+
+
+
+
+
+
+

@@ -12,3 +12,4 @@ function printStar(max, current=1) {
    }
 printStar(5);
    
+//재귀호출에 for문이 들어가면 2중 반복문이 된다.
